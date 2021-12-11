@@ -7,6 +7,7 @@
 |Zulfiqar Fauzul Akbar|05111940000101|
 
 ### Topologi
+![image](https://user-images.githubusercontent.com/62832487/145673676-5eb00726-d041-4fa6-903a-4bbdb528ec5c.png)
 
 ### Subnetting (...)
 ![ok](https://user-images.githubusercontent.com/62832487/145672203-f560ac98-d8ba-464b-8b1b-a213c3915a98.jpg)
@@ -80,7 +81,7 @@ route add -net 192.175.0.16 netmask 255.255.255.248 gw 192.175.0.2
   #
 
   # What servers should the DHCP relay forward requests to?
-  SERVERS="192.186.0.19"
+  SERVERS="192.175.0.19"
 
   # On what interfaces should the DHCP relay (dhrelay) serve DHCP requests?
   INTERFACES=""
@@ -167,7 +168,7 @@ route add -net 192.175.0.16 netmask 255.255.255.248 gw 192.175.0.2
   service isc-dhcp-server restart
   ```
 **chiper**
-mencoba DHCP
+mencoba DHCP <br>
 ![image](https://user-images.githubusercontent.com/62832487/145672500-a14bee5c-1713-4760-863f-1696805e9002.png)
 
 ### Soal 1
@@ -291,7 +292,7 @@ iptables -A INPUT -s 192.175.1.0/24 -m time --timestart 07:00 --timestop 15:00 -
 - `--timestop 15:00` : Mendefinisikan waktu berhenti yaitu 15:00
 - `-j REJECT` : Paket ditolak
 **Testing**
-- Pada Elena 
+- Pada Elena <br>
   ![image](https://user-images.githubusercontent.com/62832487/145673355-51220efd-c35b-4f7e-8418-38e373b361f8.png)
 
 
@@ -339,13 +340,13 @@ iptables -t nat -A POSTROUTING -p tcp -d 192.175.0.27 --dport 80 -j SNAT --to-so
 - Pada Elena dan Fukurou ketikkan: `nc 192.175.8.1 80`
 - Ketikkan sembarang kata pada Elena atau Fukurou, nanti akan muncul pada Jorge atau Maingate.
 
-- fukurou
+- fukurou<br>
   ![image](https://user-images.githubusercontent.com/62832487/145673600-2f773210-de81-4074-bef4-d9ee52ac0c83.png)
-- elena
+- elena<br>
   ![image](https://user-images.githubusercontent.com/62832487/145673606-9eb3460d-290a-429a-8115-7f0588b8131b.png)
-- jorge
+- jorge<br>
   ![image](https://user-images.githubusercontent.com/62832487/145673609-316e5e0a-d5eb-4a5f-9ec6-0d34130c316b.png)
-- maingate
+- maingate<br>
   ![image](https://user-images.githubusercontent.com/62832487/145673615-3ce3a79b-0171-4c91-bea1-36b4bc94e966.png)
 
 
