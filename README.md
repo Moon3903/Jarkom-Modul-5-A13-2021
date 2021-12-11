@@ -339,4 +339,5 @@ iptables -t nat -A POSTROUTING -p tcp -d 192.175.0.27 --dport 80 -j SNAT --to-so
 
 
 ### Kendala
-- pernah debugging lama karena pernah tidak sengaja ada 2 iptables(untuk internet) pada foosha 
+- pernah debugging lama karena pernah tidak sengaja ada 2 iptables(untuk internet) pada foosha
+- susah 
