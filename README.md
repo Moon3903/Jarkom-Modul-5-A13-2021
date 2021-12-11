@@ -101,25 +101,12 @@ route add -net 192.175.0.16 netmask 255.255.255.248 gw 192.175.0.2
   ```
 
 ## Setting DHCP Server
-**Jipangu**
+**JIPANGU**
 - Install aplikasi isc-dhcp-server.
 
   ```
   apt-get install isc-dhcp-server -y
   ```
-- Edit file `/etc/default/isc-dhcp-server` seperti gambar berikut:
-
-  ![ss]
-- Edit file `/etc/dhcp/dhcpd.conf` untuk menambahkan subnet sebagai berikut:
-
-- Restart isc-dhcp-server.
-
-  ```
-  service isc-dhcp-server restart
-  ```
-
-## Setting DHCP Server
-**JIPANGU**
 - edit file `/etc/default/isc-dhcp-server` seperti berikut
   ```
   INTERFACE="eth0"
