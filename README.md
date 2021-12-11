@@ -257,8 +257,8 @@ iptables -A INPUT -s 192.175.4.0/22 -m time --timestart 07:00 --timestop 15:00 -
 iptables -A INPUT -s 192.175.4.0/22 -j REJECT
 ```
 - `-A INPUT` : Menggunakan chain INPUT
-- `-s 192.186.0.128/25` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Blueno
-- `-s 192.186.4.0/22` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Chiper
+- `-s 192.175.0.128/25` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Blueno
+- `-s 192.175.4.0/22` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Chiper
 - `-m time` : Menggunakan rule time
 - `--timestart 07:00` : Mendefinisikan waktu mulai yaitu 07:00
 - `--timestop 15:00`: Mendefinisikan waktu berhenti yaitu 15:00
@@ -285,8 +285,8 @@ iptables -A INPUT -s 192.175.2.0/23 -m time --timestart 07:00 --timestop 15:00 -
 iptables -A INPUT -s 192.175.1.0/24 -m time --timestart 07:00 --timestop 15:00 -j REJECT
 ```
 - `-A INPUT` : Menggunakan chain INPUT
-- `-s 192.186.2.0/23` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Elena
-- `-s 192.186.1.0/24` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Fukurou
+- `-s 192.175.2.0/23` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Elena
+- `-s 192.175.1.0/24` : Mendifinisikan alamat asal dari paket yaitu IP dari subnet Fukurou
 - `-m time` : Menggunakan rule time
 - `--timestart 07:00` : Mendefinisikan waktu mulai yaitu 07:00
 - `--timestop 15:00` : Mendefinisikan waktu berhenti yaitu 15:00
